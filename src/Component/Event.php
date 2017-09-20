@@ -220,7 +220,7 @@ class Event extends Component
      */
     protected $recurrenceId;
 
-    public function __construct(string $uniqueId = null)
+    public function __construct($uniqueId = null)
     {
         if (null == $uniqueId) {
             $uniqueId = uniqid();
@@ -616,7 +616,7 @@ class Event extends Component
     /**
      * @return Attendees
      */
-    public function getAttendees(): Attendees
+    public function getAttendees()
     {
         return $this->attendees;
     }

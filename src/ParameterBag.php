@@ -53,7 +53,7 @@ class ParameterBag
      *
      * @return bool
      */
-    public function hasParams(): bool
+    public function hasParams()
     {
         return count($this->params) > 0;
     }
