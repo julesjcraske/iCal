@@ -25,7 +25,7 @@ class StringValue implements ValueInterface
         $this->value = $value;
     }
 
-    public function getEscapedValue(): string
+    public function getEscapedValue()
     {
         $value = $this->value;
 

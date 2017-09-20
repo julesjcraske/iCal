@@ -39,7 +39,7 @@ class PropertyBag implements \IteratorAggregate
      *
      * @return null|Property
      */
-    public function get(string $name)
+    public function get($name)
     {
         if (isset($this->elements[$name])) {
             return $this->elements[$name];

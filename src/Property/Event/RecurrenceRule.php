@@ -105,7 +105,7 @@ class RecurrenceRule implements ValueInterface
      */
     protected $bySecond;
 
-    public function getEscapedValue(): string
+    public function getEscapedValue()
     {
         return $this->buildParameterBag()->toString();
     }

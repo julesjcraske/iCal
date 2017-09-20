@@ -61,7 +61,7 @@ class ParameterBag
     /**
      * @return string
      */
-    public function toString(): string
+    public function toString()
     {
         $line = '';
         foreach ($this->params as $param => $paramValues) {

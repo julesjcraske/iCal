@@ -30,7 +30,7 @@ class Geo extends Property
      */
     private $longitude;
 
-    public function __construct(float $latitude, float $longitude)
+    public function __construct($latitude, $longitude)
     {
         $this->latitude = $latitude;
         $this->longitude = $longitude;
@@ -57,7 +57,7 @@ class Geo extends Property
      *
      * @return Geo
      */
-    public static function fromString(string $geoLocationString): self
+    public static function fromString($geoLocationString)
     {
         $geoLocationString = str_replace(',', ';', $geoLocationString);
         $parts = explode(';', $geoLocationString);
@@ -74,7 +74,7 @@ class Geo extends Property
      *
      * @return string
      */
-    public function getGeoLocationAsString(string $separator = ';'): string
+    public function getGeoLocationAsString($separator = ';')
     {
         return number_format($this->latitude, 6) . $separator . number_format($this->longitude, 6);
     }
@@ -82,7 +82,7 @@ class Geo extends Property
     /**
      * @return float
      */
-    public function getLatitude(): float
+    public function getLatitude()
     {
         return $this->latitude;
     }
@@ -90,7 +90,7 @@ class Geo extends Property
     /**
      * @return float
      */
-    public function getLongitude(): float
+    public function getLongitude()
     {
         return $this->longitude;
     }

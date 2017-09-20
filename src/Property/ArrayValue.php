@@ -32,9 +32,9 @@ class ArrayValue implements ValueInterface
         return $this;
     }
 
-    public function getEscapedValue(): string
+    public function getEscapedValue()
     {
-        return implode(',', array_map(function (string $value): string {
+        return implode(',', array_map(function ($value) {
             return (new StringValue($value))->getEscapedValue();
         }, $this->values));
     }

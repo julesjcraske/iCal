@@ -22,5 +22,5 @@ interface ValueInterface
      *
      * @return string
      */
-    public function getEscapedValue(): string;
+    public function getEscapedValue();
 }

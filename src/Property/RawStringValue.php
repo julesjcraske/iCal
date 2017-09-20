@@ -13,7 +13,7 @@ namespace Eluceo\iCal\Property;
 
 class RawStringValue extends StringValue
 {
-    public function getEscapedValue(): string
+    public function getEscapedValue()
     {
         return $this->getValue();
     }
